@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="createProduct.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <title>Shopping Cart | Edit Page</title>
+</head>
+
+<body>
+  <header>
+
+    <div class="container">
+
+
+      <div class="container-content">
+        <a class="brand" href="index.html">Shopping Cart</a>
+        <nav>
+          <ul id="links">
+            <li><a href="signIn.html">Sign In</a></li>
+            <li><a href="signUp.html">Sign Up</a></li>
+          </ul>
+
+          <ul id="user_Info">
+
+            <li><a href="profile.html" id="user">Profile</a></li>
+            <li><a href="favorite.html">Favorites</a></li>
+            <li><a href="myProducts.html">My Products</a></li>
+            <li class="shoppingCart">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="badge"></span>
+              <div class="carts-products">
+                <div></div>
+
+                <a href="cartsProducts.html">view All Products</a>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" id="logOut">logOut</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+  <section class="home">
+    <div class="container">
+      <div class="create-product-page">
+        <form id="update-form">
+          <input type="file" id="upload-image-file" />
+          <input type="text" placeholder="Name..." id="product-name" />
+          <input type="text" placeholder="description..." id="product-desc" />
+          <select name="" id="product-size">
+            <option value="" hidden>Select Size</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+          <button type="submit" value="update" class="addBtn-Product">Update</button>
+        </form>
+      </div>
+      <a href="createProduct.html" class="create-product-icon"><i class="fa fa-plus"></i></a>
+
+      </div>
+  </section>
+  <footer>
+  </footer>
+  <script src="js/user.js"></script>
+  <script src="js/editProduct.js"></script>
+  <script src="js/cartsMenu.js"></script>
+  <script src="js/data.js"></script>
+
+
+</body>
+
+</html>
